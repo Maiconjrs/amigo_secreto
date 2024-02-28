@@ -1,0 +1,40 @@
+.rodapeConfiguracoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao {
+  width: 350px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 45px;
+  background: #fe652b;
+  color: #fff;
+  box-shadow: 2px 2px 0px 1px #000000;
+  cursor: pointer;
+}
+
+.botao:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.botao:hover {
+  background-color: #4b69fd;
+}
+
+@media screen and (max-width: 800px) {
+  .botao {
+    width: 220px;
+    margin: 32px 0;
+  }
+
+  .rodapeConfiguracoes {
+    flex-direction: column;
+  }
+
+  .rodapeConfiguracoes img {
+    margin-top: 32px;
+  }
+}
